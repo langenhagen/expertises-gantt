@@ -1,0 +1,61 @@
+html,body,#wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.chart {
+    font-family: Courier, sans-serif;
+    font-size: 12px;
+}
+
+.axis path,.axis line {
+    fill: none;
+    stroke: #000;
+    pointer-events: none;
+}
+
+.axis text {
+    pointer-events: none;
+}
+
+.hoverRect {
+    fill: #ffffff;
+    opacity: 1;
+}
+
+.hoverRect:hover {
+    fill: yellow;
+}
+
+.bar-work {
+    fill: #3399ff;
+    stroke: #000;
+    stroke-width: 1;
+    pointer-events: none;
+}
+
+.bar-education {
+    fill:  #eebb00;
+    stroke: #000;
+    stroke-width: 1;
+    pointer-events: none;
+}
+
+.bar-language {
+    fill: #009900;
+    stroke: #000;
+    stroke-width: 1;
+    pointer-events: none;
+}
+
+.bar-technology {
+    fill: #ff0000;
+    stroke: #000;
+    stroke-width: 1;
+    pointer-events: none;
+}
+
+.tick {
+    stroke-width: 1;
+}
