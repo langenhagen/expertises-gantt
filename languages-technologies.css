@@ -15,6 +15,11 @@ html,body,#wrapper {
     pointer-events: none;
 }
 
+.vertical-line {
+    stroke: #000;
+    pointer-events: none;
+}
+
 .axis text {
     pointer-events: none;
 }
