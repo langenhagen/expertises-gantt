@@ -72,8 +72,8 @@ html,body,#wrapper {
 
 #parent-div {
     border: 3px solid red;
-    overflow-y:auto;
-    overflow-x:auto;
+    overflow-y:hidden;
+    overflow-x:hidden;
 }
 
 svg{

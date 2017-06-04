@@ -87,5 +87,5 @@ entries.forEach(function(task) {
 var gantt = d3.gantt()
 .selector('#parent-div')
 .taskTypes(entryNames)
-.taskStatus(entryTypeCssStyles);
+.taskCssClassMapping(entryTypeCssStyles);
 gantt(entries);
