@@ -55,7 +55,6 @@ var entries = [
 
 ] // end entries
 
-var format = "%Y";
 
 var entryTypeCssStyles = {
     "work":         "bar-work",
@@ -85,5 +84,8 @@ entries.forEach(function(task) {
     task["status"] = task["type"];
 });
 
-var gantt = d3.gantt().taskTypes(entryNames).taskStatus(entryTypeCssStyles).tickFormat(format);
+var gantt = d3.gantt()
+.selector('#parent-div')
+.taskTypes(entryNames)
+.taskStatus(entryTypeCssStyles);
 gantt(entries);

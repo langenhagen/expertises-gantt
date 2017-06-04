@@ -69,3 +69,15 @@ html,body,#wrapper {
 .tick {
     stroke-width: 1;
 }
+
+#parent-div {
+    border: 3px solid red;
+    overflow-y:auto;
+    overflow-x:auto;
+}
+
+svg{
+    border: 3px solid green;
+    background: #fff;
+}
+
