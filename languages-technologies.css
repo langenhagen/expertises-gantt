@@ -4,9 +4,7 @@ version: 170603
 */
 
 html,body,#wrapper {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
+    margin: 20px;
 }
 
 .chart {
@@ -18,11 +16,13 @@ html,body,#wrapper {
     fill: none;
     stroke: #000;
     pointer-events: none;
+    position: absolute;
 }
 
 .vertical-line {
     stroke: #000;
     pointer-events: none;
+    stroke-dasharray: 3 3;
 }
 
 .axis text {
@@ -30,7 +30,7 @@ html,body,#wrapper {
 }
 
 .hoverRect {
-    fill: #ffffff;
+    fill: #ffd;
     opacity: 1;
 }
 
@@ -71,13 +71,44 @@ html,body,#wrapper {
 }
 
 #parent-div {
-    border: 3px solid red;
-    overflow-y:hidden;
-    overflow-x:hidden;
+    //border: 3px solid magenta;
+    position: sticky;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 50px;
 }
 
-svg{
-    border: 3px solid green;
-    background: #fff;
+#legendY-div {
+    width: 220px;
+    //border: 3px solid blue;
+    float:left
+/*    font-family: Courier, sans-serif;
+    font-size: 12px;*/
+}
+
+#vertical-scroll-div {
+    height: 600px;
+    border: 3px solid brown;
+    overflow-y: scroll;
+/*    font-family: Courier, sans-serif;
+    font-size: 12px;*/
+}
+
+#legendX-div {
+    height: 200px;
+    //border: 3px solid orange;
+/*    font-family: Courier, sans-serif;
+    font-size: 12px;*/
+}
+
+#gantt-div {
+    //border: 3px solid red;
+    overflow-y:auto;
+    overflow-x:auto;
+}
+
+svg {
+    //border: 3px solid green;
 }
 

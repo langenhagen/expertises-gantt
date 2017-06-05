@@ -85,7 +85,9 @@ entries.forEach(function(task) {
 });
 
 var gantt = d3.gantt()
-.selector('#parent-div')
+.parentContainer('#parent-div')
+.ganttContainer('#gantt-div')
+.legendYContainer('#legendY-div')
 .taskTypes(entryNames)
 .taskCssClassMapping(entryTypeCssStyles);
 gantt(entries);
