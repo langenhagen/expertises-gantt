@@ -15,7 +15,6 @@ By now, a little transformation code from what the context of My data is to what
 Gantt chart library anticipates is inside My javascript code.
 
 ## TODO:
-- Make bottom Year axis not scrollable / scroll agnostic
 - Fix width
 - Paddings / Margins
 - Change color ways (http://www.colourlovers.com/)
