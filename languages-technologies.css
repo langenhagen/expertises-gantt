@@ -4,12 +4,24 @@ version: 170610
 */
 
 html,body,#wrapper {
+    background: #F0F0F0;
     margin-top: 40px;
     margin-bottom: 0px;
     margin-left: 20;
     margin-right: 25px;
     font-family: 'Droid Serif', serif;
     font-size: 20px;
+}
+
+#parent-div {
+    //border: 3px solid magenta;
+    background: #FFF;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 50px;
+    overflow: auto;
+    font-family: 'Droid Sans', sans-serif;
 }
 
 .chart {
@@ -35,26 +47,26 @@ html,body,#wrapper {
 }
 
 .hoverRect {
-    fill: #ffd;
-    opacity: 1;
+    opacity: 0;
 }
 
 .hoverRect:hover {
-    fill: yellow;
+    fill: #464;
+    opacity: 1;
 }
 
-.bar-work {
-    fill: #4ECDC4;
-    background: #4ECDC4;
+.bar-education {
+    fill:  #FF6B6B;
+    background: #FF6B6B;
     font-weight: bold;
     stroke: #000;
     stroke-width: 1;
     pointer-events: none;
 }
 
-.bar-education {
-    fill:  #FF6B6B;
-    background: #FF6B6B;
+.bar-work {
+    fill: #4ECDC4;
+    background: #4ECDC4;
     font-weight: bold;
     stroke: #000;
     stroke-width: 1;
@@ -71,8 +83,8 @@ html,body,#wrapper {
 }
 
 .bar-technology {
-    fill: #556270;
-    background: #556270;
+    fill: #839096;
+    background: #839096;
     font-weight: bold;
     stroke: #000;
     stroke-width: 1;
@@ -83,20 +95,12 @@ html,body,#wrapper {
     stroke-width: 1;
 }
 
-#parent-div {
-    //border: 3px solid magenta;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 50px;
-    overflow: auto;
-    font-family: 'Droid Sans', sans-serif;
-}
-
 #vertical-scroll-div {
     //border: 3px solid brown;
     height: 600px;
     overflow-y: scroll;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 #legendX-div {
@@ -104,6 +108,7 @@ html,body,#wrapper {
     height: 60;
     overflow-x: auto;
     overflow-y: hidden;
+    margin-right: 20px;
 }
 
 #legendY-div {
