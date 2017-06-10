@@ -3,6 +3,17 @@ author: langenhagen
 version: 170610
 */
 
+/* the colors for find/replace fast exchange
+
+site background: #F0F0F0
+chart background: #FFF
+hover bar: #464;
+education: #FF6B6B
+work: #4ECDC4
+language: #C7F464
+technology: #839096
+*/
+
 html,body,#wrapper {
     background: #F0F0F0;
     margin-top: 40px;
