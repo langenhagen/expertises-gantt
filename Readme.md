@@ -1,6 +1,6 @@
 # Gantt Chart for My Languages and technologies.
 author: langenhagen
-version 170528
+version 170610
 
 
 Nice Javascript visualisation of the languages and APIs I used and use
@@ -15,10 +15,10 @@ By now, a little transformation code from what the context of My data is to what
 Gantt chart library anticipates is inside My javascript code.
 
 ## TODO:
-- Fix width
-- Paddings / Margins
+
+- Put a big div in front of everything and let it manage the scrolling
+- make legend for colors
+- write Number of years into each entry field.
 - Change color ways (http://www.colourlovers.com/)
 - make CSS nice
-- Change font to something Sans Serif?
 - Make one complete version, and make one concise version
-- Make explanatory text on the top with a legend of the colors and what You provide
