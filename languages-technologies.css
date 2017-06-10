@@ -45,6 +45,8 @@ html,body,#wrapper {
 
 .bar-work {
     fill: #3399ff;
+    background: #3399ff;
+    font-weight: bold;
     stroke: #000;
     stroke-width: 1;
     pointer-events: none;
@@ -52,6 +54,8 @@ html,body,#wrapper {
 
 .bar-education {
     fill:  #eebb00;
+    background: #eebb00;
+    font-weight: bold;
     stroke: #000;
     stroke-width: 1;
     pointer-events: none;
@@ -59,6 +63,8 @@ html,body,#wrapper {
 
 .bar-language {
     fill: #009900;
+    background: #009900;
+    font-weight: bold;
     stroke: #000;
     stroke-width: 1;
     pointer-events: none;
@@ -66,6 +72,8 @@ html,body,#wrapper {
 
 .bar-technology {
     fill: #ff0000;
+    background: #ff0000;
+    font-weight: bold;
     stroke: #000;
     stroke-width: 1;
     pointer-events: none;
