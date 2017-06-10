@@ -17,8 +17,5 @@ Gantt chart library anticipates is inside My javascript code.
 ## TODO:
 
 - Put a big div in front of everything and let it manage the scrolling
-- make legend for colors
 - write Number of years into each entry field.
-- Change color ways (http://www.colourlovers.com/)
-- make CSS nice
 - Make one complete version, and make one concise version
