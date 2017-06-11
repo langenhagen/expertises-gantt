@@ -1,16 +1,15 @@
 /**
- * @author Dimitry Kudrayvtsev
- * @version 2.1
- *
- * dramatic changes made by
  * @author: Andreas Langenhagen
  * @version 170611
+ *
+ * Based on the work of Dimitry Kudrayvtsev github.com/dk8996/Gantt-Chart (version 2.1)
  *
  * Great that Dimitry provided something to start with.
  * I added a vertical line that marks the year on which the mouse is floating,
  * added row that highlights the entry on which the mouse is floating,
  * made the axes stick to the foreground,
- * and put div containters in front of everything that enable unified scrolling.
+ * put div containters that enable unified scrolling in front of everything
+ * and added text to every gantt entry that depicts the number of years each entry represents.
  */
 
 d3.gantt = function() {
@@ -49,7 +48,7 @@ d3.gantt = function() {
 
         yScale = d3.scale.ordinal()
             .domain(taskTypes)
-            .rangeRoundBands([ 0, height ], 0);
+            .rangeBands([ 0, height ], 0);
 
 	    yAxis = d3.svg.axis()
             .scale(yScale)
@@ -100,9 +99,10 @@ d3.gantt = function() {
             .attr("height", height)
 
         // the horizontal rectangle highlighting the entry under the cursor
-        var hoverRect = svg.append("rect")
-            .attr("class", "hoverRect")
-            .attr("height", entryHeight+4)
+        var hoverBarHeight = entryHeight+4;
+        var hoverBar = svg.append("rect")
+            .attr("class", "hoverBar")
+            .attr("height", hoverBarHeight)
             .attr("width",  yAxisGroupWidth + width)
             .attr("transform", "translate( "+0+",-"+10000+")");
 
@@ -127,7 +127,7 @@ d3.gantt = function() {
         // the rectangle gantt entries
         var rectHeight = yScale.rangeBand()-8;
         var rectTransform = function(d) {
-            return "translate("+xScale(d.startDate)+","+yScale(d.taskName)+")";
+            return "translate("+xScale(d.startDate)+","+(yScale(d.taskName)+4)+")";
         };
         var rectWidth = function(d) {
             return xScale(d.endDate) - xScale(d.startDate);
@@ -137,7 +137,6 @@ d3.gantt = function() {
             .attr("rx", 10)
             .attr("ry", 1000)
             .attr("class", function(d) { return taskCssClassMapping[d.status]; })
-            .attr("y", 4)
             .attr("transform", rectTransform)
             .attr("height", rectHeight)
             .attr("width", rectWidth);
@@ -175,7 +174,7 @@ d3.gantt = function() {
         // manage the scrolling
         var scrollContainerElement = document.getElementById(scrollContainer);
         scrollContainerElement.style.width = yAxisGroupWidth + width;
-        scrollContainerElement.style.height =  height + legendXContainerElement.offsetHeight + 10;
+        scrollContainerElement.style.height =  height + legendXContainerElement.offsetHeight;
         var verticalScrollElement = document.getElementById("vertical-scroll-div");
         var ganttContainerElement = document.getElementById(ganttContainer.substring(1));
         var outerScrollContainerElement = document.getElementById(outerScrollContainer);
@@ -200,12 +199,12 @@ d3.gantt = function() {
                 .attr("x1", hoverLineX)
                 .attr("x2", hoverLineX);
 
-            var mouseY = outerScrollContainerElement.scrollTop + event.pageY - parentOffset.top + yScale.rangeBand()/2;
-            var hoverRectY = mouseY - yScale.rangeBand()/2 - mouseY % (yScale.rangeBand());
-            hoverRectY = Math.max( yScale.rangeBand()/2, hoverRectY);
+            var mouseY = outerScrollContainerElement.scrollTop + event.pageY - parentOffset.top;
+            var hoverBarY = mouseY - mouseY % (yScale.rangeBand());
+            hoverBarY = Math.max( 0, hoverBarY );
 
-            hoverRect
-                .attr("transform", "translate( "+0+","+(hoverRectY-2)+")");
+            hoverBar
+                .attr("transform", "translate( "+0+","+(hoverBarY )+")");
         };
 
         return gantt;
