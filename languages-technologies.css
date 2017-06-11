@@ -85,11 +85,18 @@ svg {
 .chart {
 }
 
+.text-entry {
+    opacity: 1;
+    font-family: 'Droid Sans', sans-serif;
+    //font-style: italic;
+    font-size: 19px;
+    fill: #FFF;
+}
+
 .axis text {
 }
 
 .hoverRect {
-    opacity: 1;
     fill: #464;
 }
 
