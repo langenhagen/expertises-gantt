@@ -19,6 +19,7 @@ html,body {
     background: #F0F0F0;
     font-family: 'Droid Sans', sans-serif;
     font-size: 20px;
+    stroke-width: 1;
 }
 
 #explain-text-div {
@@ -37,7 +38,6 @@ html,body {
     margin-right: 50px;
     padding-right: 20px;
     overflow: hidden;
-    font-family: 'Droid Sans', sans-serif;
     position: relative;
 }
 
@@ -69,7 +69,6 @@ html,body {
 #legendY-div {
     //border: 3px solid blue;
     float: left;
-    font-size: 20px;
     display: inline-block;
 }
 
@@ -87,8 +86,6 @@ svg {
 
 .text-entry {
     opacity: 1;
-    font-family: 'Droid Sans', sans-serif;
-    //font-style: italic;
     font-size: 19px;
     fill: #FFF;
 }
@@ -105,7 +102,6 @@ svg {
     background: #FF6B6B;
     font-weight: bold;
     stroke: #000;
-    stroke-width: 1;
 }
 
 .bar-work {
@@ -113,7 +109,6 @@ svg {
     background: #4ECDC4;
     font-weight: bold;
     stroke: #000;
-    stroke-width: 1;
 }
 
 .bar-language {
@@ -121,7 +116,6 @@ svg {
     background: #C7F464;
     font-weight: bold;
     stroke: #000;
-    stroke-width: 1;
 }
 
 .bar-technology {
@@ -129,7 +123,6 @@ svg {
     background: #839096;
     font-weight: bold;
     stroke: #000;
-    stroke-width: 1;
 }
 
 .axis path,.axis line {
@@ -145,5 +138,4 @@ svg {
 }
 
 .tick {
-    stroke-width: 1;
 }
