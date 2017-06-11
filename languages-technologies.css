@@ -22,7 +22,7 @@ html,body {
 }
 
 #explain-text-div {
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 50px;
     margin-left: 20;
     margin-right: 25px;
@@ -31,8 +31,8 @@ html,body {
 #parent-div {
     //border: 3px solid magenta;
     background: #FFF;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    padding-bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
     padding-right: 20px;
