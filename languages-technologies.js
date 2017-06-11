@@ -89,6 +89,8 @@ var gantt = d3.gantt()
 .ganttContainer('#gantt-div')
 .legendYContainer('#legendY-div')
 .legendXContainer('#legendX-div')
+.outerScrollContainer('scroll-container-div')
+.scrollContainer('scroll-div')
 .taskTypes(entryNames)
 .taskCssClassMapping(entryTypeCssStyles);
 gantt(entries);

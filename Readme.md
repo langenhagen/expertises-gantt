@@ -1,6 +1,6 @@
 # Gantt Chart for My Languages and technologies.
 author: langenhagen
-version 170610
+version 170611
 
 
 Nice Javascript visualisation of the languages and APIs I used and use
@@ -16,6 +16,5 @@ Gantt chart library anticipates is inside My javascript code.
 
 ## TODO:
 
-- Put a big div in front of everything and let it manage the scrolling
 - write Number of years into each entry field.
 - Make one complete version, and make one concise version

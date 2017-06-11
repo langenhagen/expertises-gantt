@@ -1,9 +1,10 @@
 /*
 author: langenhagen
-version: 170610
+version: 170611
 */
 
-/* the colors for find/replace fast exchange
+/*
+the colors for find/replace fast exchange
 
 site background: #F0F0F0
 chart background: #FFF
@@ -14,112 +15,55 @@ language: #C7F464
 technology: #839096
 */
 
-html,body,#wrapper {
+html,body {
     background: #F0F0F0;
-    margin-top: 40px;
-    margin-bottom: 0px;
-    margin-left: 20;
-    margin-right: 25px;
     font-family: 'Droid Sans', sans-serif;
     font-size: 20px;
+}
+
+#explain-text-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20;
+    margin-right: 25px;
 }
 
 #parent-div {
     //border: 3px solid magenta;
     background: #FFF;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
     margin-right: 50px;
-    overflow: auto;
+    padding-right: 20px;
+    overflow: hidden;
     font-family: 'Droid Sans', sans-serif;
+    position: relative;
 }
 
-.chart {
-    font-family: Courier, sans-serif;
-    font-size: 12px;
-}
-
-.axis path,.axis line {
-    fill: none;
-    stroke: #000;
-    pointer-events: none;
+#scroll-container-div {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: scroll;
     position: absolute;
 }
 
-.vertical-line {
-    stroke: #000;
-    pointer-events: none;
-    stroke-dasharray: 3 3;
-}
-
-.axis text {
-    pointer-events: none;
-}
-
-.hoverRect {
-    opacity: 0;
-}
-
-.hoverRect:hover {
-    fill: #464;
-    opacity: 1;
-}
-
-.bar-education {
-    fill:  #FF6B6B;
-    background: #FF6B6B;
-    font-weight: bold;
-    stroke: #000;
-    stroke-width: 1;
-    pointer-events: none;
-}
-
-.bar-work {
-    fill: #4ECDC4;
-    background: #4ECDC4;
-    font-weight: bold;
-    stroke: #000;
-    stroke-width: 1;
-    pointer-events: none;
-}
-
-.bar-language {
-    fill: #C7F464;
-    background: #C7F464;
-    font-weight: bold;
-    stroke: #000;
-    stroke-width: 1;
-    pointer-events: none;
-}
-
-.bar-technology {
-    fill: #839096;
-    background: #839096;
-    font-weight: bold;
-    stroke: #000;
-    stroke-width: 1;
-    pointer-events: none;
-}
-
-.tick {
-    stroke-width: 1;
+#scroll-div {
+    //border: 3px solid red;
+    display: inline-block;
 }
 
 #vertical-scroll-div {
     //border: 3px solid brown;
     height: 600px;
-    overflow-y: scroll;
-    margin-top: 20px;
-    margin-right: 20px;
+    position: static;
+    overflow: hidden;
 }
 
 #legendX-div {
     //border: 3px solid purple;
-    height: 60;
-    overflow-x: auto;
-    overflow-y: hidden;
-    margin-right: 20px;
+    height: 50px;
+    overflow: hidden;
 }
 
 #legendY-div {
@@ -131,9 +75,68 @@ html,body,#wrapper {
 
 #gantt-div {
     //border: 3px solid red;
-    overflow-x:auto;
+    overflow:hidden;
 }
 
 svg {
     //border: 3px solid green;
+}
+
+.chart {
+}
+
+.axis text {
+}
+
+.hoverRect {
+    opacity: 1;
+    fill: #464;
+}
+
+.bar-education {
+    fill:  #FF6B6B;
+    background: #FF6B6B;
+    font-weight: bold;
+    stroke: #000;
+    stroke-width: 1;
+}
+
+.bar-work {
+    fill: #4ECDC4;
+    background: #4ECDC4;
+    font-weight: bold;
+    stroke: #000;
+    stroke-width: 1;
+}
+
+.bar-language {
+    fill: #C7F464;
+    background: #C7F464;
+    font-weight: bold;
+    stroke: #000;
+    stroke-width: 1;
+}
+
+.bar-technology {
+    fill: #839096;
+    background: #839096;
+    font-weight: bold;
+    stroke: #000;
+    stroke-width: 1;
+}
+
+.axis path,.axis line {
+    fill: none;
+    stroke: #000;
+    position: absolute;
+}
+
+.vertical-line {
+    stroke: #000;
+    pointer-events: none;
+    stroke-dasharray: 3 3;
+}
+
+.tick {
+    stroke-width: 1;
 }

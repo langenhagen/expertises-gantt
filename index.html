@@ -7,26 +7,32 @@ version: 20170610
 <html>
     <head>
         <title>Languages and Technologies - Andreas Langenhagen</title>
-        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
-        <link type="text/css" href="languages-technologies.css" rel="stylesheet" />
+
     </head>
     <body>
         <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
-    <!--    <script type="text/javascript" src="http://static.mentful.com/gantt-chart-d3v2.js"></script> SERVER VERSION-->
         <script type="text/javascript" src="lib/dk8996-Gantt-Chart-7148ec1/gantt-chart-d3.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+        <link type="text/css" href="languages-technologies.css" rel="stylesheet" />
 
         <div id="explain-text-div">
-        The following diagram shows what I did when in my career as a computer scientist
-        and software engineer.<br>
-        It depicts the few stages of my career such as <span class="bar-education">lyceums</span>
-        and <span class="bar-work">companies</span>
-        as well as the computer <span class="bar-language">languages</span>
-        and <span class="bar-technology">technologies</span>
-        I have worked with and with which I spent a considerable amount of practice and time.<br>
-        This is a more or less complete listing which I keep for my private record.
+            The following diagram shows what I did when in my career as a computer scientist
+            and software engineer.<br>
+            It depicts the few stages of my career such as
+            <span class="bar-education">educational facilities</span>
+            and <span class="bar-work">workplaces</span>
+            as well as the computer <span class="bar-language">languages</span>
+            and <span class="bar-technology">technologies</span>
+            I have worked with and with which I spent a considerable amount of practice and time.<br>
+            This is a more or less complete listing which I keep for my private record.
         </div>
 
         <div id="parent-div">
+            <div id="scroll-container-div">
+                <div id="scroll-div">
+                </div>
+            </div>
             <div id="vertical-scroll-div">
                 <div id="legendY-div"></div>
                 <div id="gantt-div"></div>
