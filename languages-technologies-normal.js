@@ -14,13 +14,12 @@ var entries = [
 {"name":"Visual Basic", "startDate":new Date("2000"),"endDate":new Date("2007"),"type":"language"},
 {"name":"C++",          "startDate":new Date("2006"),"endDate":new Date("2008"),"type":"language"},
 {"name":"C++",          "startDate":new Date("2011"),"endDate":new Date("2018"),"type":"language"},
-{"name":"C",            "startDate":new Date("2008"),"endDate":new Date("2010"),"type":"language"},
 {"name":"Java",         "startDate":new Date("2007"),"endDate":new Date("2013"),"type":"language"},
 {"name":"Java",         "startDate":new Date("2017"),"endDate":new Date("2018"),"type":"language"},
 {"name":"C#",           "startDate":new Date("2012"),"endDate":new Date("2015"),"type":"language"},
 {"name":"Python",       "startDate":new Date("2015"),"endDate":new Date("2018"),"type":"language"},
-{"name":"HLSL",         "startDate":new Date("2014"),"endDate":new Date("2016"),"type":"language"},
-{"name":"GLSL",         "startDate":new Date("2014"),"endDate":new Date("2016"),"type":"language"},
+{"name":"HLSL",         "startDate":new Date("2013"),"endDate":new Date("2015"),"type":"language"},
+{"name":"GLSL",         "startDate":new Date("2013"),"endDate":new Date("2015"),"type":"language"},
 
 
 {"name":"Windows Forms",    "startDate":new Date("2000"),"endDate":new Date("2006"),"type":"technology"},
