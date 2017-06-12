@@ -13,4 +13,3 @@ Gantt chart library anticipates is inside My javascript code.
 
 ## TODO:
 
-- Make one complete version, and make one concise version
