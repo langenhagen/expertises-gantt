@@ -46,6 +46,7 @@ html,body {
     max-height: 100%;
     overflow: scroll;
     position: absolute;
+    min-height: 100%;
 }
 
 #scroll-div {

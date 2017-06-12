@@ -48,7 +48,7 @@ d3.gantt = function() {
 
         yScale = d3.scale.ordinal()
             .domain(taskTypes)
-            .rangeBands([ 0, height ], 0);
+            .rangeBands([ 0, height ], 0, 1);
 
 	    yAxis = d3.svg.axis()
             .scale(yScale)
@@ -66,7 +66,7 @@ d3.gantt = function() {
         tasks.sort(function(a, b) { return a.startDate - b.startDate; });
         timeDomainStart = tasks[0].startDate;
 
-        var entryHeight = 30; // height of one entry row
+        var entryHeight = 34; // height of one entry row
         height = tasks.length * entryHeight;
 
         var yearLength = 100; // length of one year in the diagram
@@ -200,8 +200,8 @@ d3.gantt = function() {
                 .attr("x2", hoverLineX);
 
             var mouseY = outerScrollContainerElement.scrollTop + event.pageY - parentOffset.top;
-            var hoverBarY = mouseY - mouseY % (yScale.rangeBand());
-            hoverBarY = Math.max( 0, hoverBarY );
+            var hoverBarY = mouseY - mouseY % (yScale.rangeBand()) - (hoverBarHeight - yScale.rangeBand())/2;
+            hoverBarY = Math.max( yScale.rangeBand(), hoverBarY );
 
             hoverBar
                 .attr("transform", "translate( "+0+","+(hoverBarY )+")");
