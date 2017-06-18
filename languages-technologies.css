@@ -80,6 +80,7 @@ html,body {
 
 svg {
     //border: 3px solid green;
+    font-size: 20px;
 }
 
 .chart {
