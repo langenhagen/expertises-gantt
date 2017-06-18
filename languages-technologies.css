@@ -140,3 +140,9 @@ svg {
 
 .tick {
 }
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 12px;
+    }
+}
