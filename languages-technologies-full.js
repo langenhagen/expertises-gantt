@@ -48,8 +48,9 @@ var entries = [
 {"name":"Android",          "startDate":new Date("2017"),"endDate":new Date("2018"),"type":"technology"},
 {"name":"iOS",              "startDate":new Date("2017"),"endDate":new Date("2018"),"type":"technology"},
 {"name":"PlantUML",         "startDate":new Date("2017"),"endDate":new Date("2018"),"type":"technology"},
-{"name":"Jira",             "startDate":new Date("2017"),"endDate":new Date("2018"),"type":"technology"},
-{"name":"Gerrit",           "startDate":new Date("2017"),"endDate":new Date("2018"),"type":"technology"},
+{"name":"Jira",             "startDate":new Date("2016"),"endDate":new Date("2018"),"type":"technology"},
+{"name":"Gerrit",           "startDate":new Date("2016"),"endDate":new Date("2018"),"type":"technology"},
+{"name":"Git",              "startDate":new Date("2016"),"endDate":new Date("2018"),"type":"technology"},
 
 ] // end entries
 
