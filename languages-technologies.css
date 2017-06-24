@@ -47,6 +47,7 @@ html,body {
     overflow: scroll;
     position: absolute;
     min-height: 100%;
+    cursor:move;
 }
 
 #scroll-div {
