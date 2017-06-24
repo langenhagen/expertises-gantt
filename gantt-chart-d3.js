@@ -185,6 +185,29 @@ d3.gantt = function() {
             verticalScrollElement.scrollTop = outerScrollContainerElement.scrollTop;
         };
 
+        // manage scrolling through mouse dragging on the gantt chart.
+        var isDragging = false;
+        var oldMouseX = 0;
+        var oldMouseY = 0;
+        var oldScrollX = 0;
+        var oldScrollY = 0;
+
+        outerScrollContainerElement.onmousedown = function(event) {
+            isDragging = true;
+            oldMouseX = event.pageX - $(this).offset().left;
+            oldMouseY = event.pageY - $(this).offset().top;
+            oldScrollX = outerScrollContainerElement.scrollLeft;
+            oldScrollY = outerScrollContainerElement.scrollTop;
+        }
+        outerScrollContainerElement.onmouseup = function (event) {
+            isDragging = false;
+        }
+        outerScrollContainerElement.onmouseout = function (event) {
+            isDragging = false;
+            console.log("mouseout");
+        }
+
+
         // make the dashed vertical line snap to the nearest year
         // make the horizontal bar snap to nearest entry row
         outerScrollContainerElement.onmousemove = function(event) {
@@ -205,6 +228,15 @@ d3.gantt = function() {
 
             hoverBar
                 .attr("transform", "translate( "+0+","+(hoverBarY )+")");
+
+            if( isDragging ){
+                // mouse scrolling through dragging
+                currentMouseX = event.pageX - $(this).offset().left;
+                currentMouseY = event.pageY - $(this).offset().top;
+
+                outerScrollContainerElement.scrollLeft = oldScrollX + oldMouseX - currentMouseX;
+                outerScrollContainerElement.scrollTop = oldScrollY + oldMouseY - currentMouseY;
+            }
         };
 
         return gantt;
