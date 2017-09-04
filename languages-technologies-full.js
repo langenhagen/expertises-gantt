@@ -51,6 +51,7 @@ var entries = [
 {"name":"Jira",             "startDate":new Date("2016"),"endDate":new Date("2018"),"type":"technology"},
 {"name":"Gerrit",           "startDate":new Date("2016"),"endDate":new Date("2018"),"type":"technology"},
 {"name":"Git",              "startDate":new Date("2016"),"endDate":new Date("2018"),"type":"technology"},
+{"name":"Franca",           "startDate":new Date("2017"),"endDate":new Date("2018"),"type":"technology"},
 
 ] // end entries
 
