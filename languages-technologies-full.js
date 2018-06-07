@@ -53,6 +53,7 @@ var entries = [
 {"name":"PlantUML",         "startDate":new Date("2017"),"endDate":new Date("2019"),"type":"technology"},
 {"name":"Jira",             "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"technology"},
 {"name":"Gerrit",           "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"technology"},
+{"name":"Jenkins",          "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"technology"},
 {"name":"Git",              "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"technology"},
 
 ] // end entries
