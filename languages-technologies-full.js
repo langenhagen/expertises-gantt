@@ -1,6 +1,6 @@
 /*
 author: langenhagen
-version: 170501
+version: 18-10-28
 */
 
 
@@ -9,7 +9,8 @@ var entries = [
 {"name":"Technische Universit\u00e4t Berlin", "startDate":new Date("2007"),"endDate":new Date("2016"),"type":"education"},
 
 {"name":"DAI-Labor",    "startDate":new Date("2011"),"endDate":new Date("2014"),"type":"work"},
-{"name":"HERE",         "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"work"},
+{"name":"HERE",         "startDate":new Date("2016"),"endDate":new Date("2018"),"type":"work"},
+{"name":"CeleraOne",    "startDate":new Date("2018"),"endDate":new Date("2019"),"type":"work"},
 
 {"name":"Basic",        "startDate":new Date("1998"),"endDate":new Date("2001"),"type":"language"},
 {"name":"Visual Basic", "startDate":new Date("2000"),"endDate":new Date("2007"),"type":"language"},
