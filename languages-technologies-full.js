@@ -10,7 +10,7 @@ var entries = [
 
 {"name":"DAI-Labor",    "startDate":new Date("2011"),"endDate":new Date("2014"),"type":"work"},
 {"name":"HERE",         "startDate":new Date("2016"),"endDate":new Date("2018"),"type":"work"},
-{"name":"CeleraOne",    "startDate":new Date("2018"),"endDate":new Date("2019"),"type":"work"},
+{"name":"CeleraOne",    "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"work"},
 
 {"name":"Basic",        "startDate":new Date("1998"),"endDate":new Date("2001"),"type":"language"},
 {"name":"Visual Basic", "startDate":new Date("2000"),"endDate":new Date("2007"),"type":"language"},
@@ -20,7 +20,7 @@ var entries = [
 {"name":"Java",         "startDate":new Date("2008"),"endDate":new Date("2013"),"type":"language"},
 {"name":"Java",         "startDate":new Date("2017"),"endDate":new Date("2019"),"type":"language"},
 {"name":"C#",           "startDate":new Date("2011"),"endDate":new Date("2015"),"type":"language"},
-{"name":"Python",       "startDate":new Date("2015"),"endDate":new Date("2019"),"type":"language"},
+{"name":"Python",       "startDate":new Date("2015"),"endDate":new Date("2020"),"type":"language"},
 {"name":"Ruby",         "startDate":new Date("2007"),"endDate":new Date("2008"),"type":"language"},
 {"name":"Ruby",         "startDate":new Date("2017"),"endDate":new Date("2018"),"type":"language"},
 {"name":"Objective C",  "startDate":new Date("2017"),"endDate":new Date("2018"),"type":"language"},
@@ -36,8 +36,10 @@ var entries = [
 {"name":"CSS",          "startDate":new Date("2014"),"endDate":new Date("2016"),"type":"language"},
 {"name":"SQL",          "startDate":new Date("2014"),"endDate":new Date("2015"),"type":"language"},
 {"name":"SQL",          "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"language"},
+{"name":"MongoDB",      "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"language"},
 {"name":"Matlab",       "startDate":new Date("2012"),"endDate":new Date("2013"),"type":"language"},
 {"name":"AutoIt",       "startDate":new Date("2008"),"endDate":new Date("2011"),"type":"language"},
+{"name":"Lua",          "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"language"},
 
 {"name":"Windows Forms",    "startDate":new Date("2000"),"endDate":new Date("2006"),"type":"technology"},
 {"name":"Irrlicht",         "startDate":new Date("2005"),"endDate":new Date("2006"),"type":"technology"},
@@ -51,11 +53,19 @@ var entries = [
 {"name":"Processing",       "startDate":new Date("2014"),"endDate":new Date("2016"),"type":"technology"},
 {"name":"Android",          "startDate":new Date("2017"),"endDate":new Date("2019"),"type":"technology"},
 {"name":"iOS",              "startDate":new Date("2017"),"endDate":new Date("2019"),"type":"technology"},
-{"name":"PlantUML",         "startDate":new Date("2017"),"endDate":new Date("2019"),"type":"technology"},
-{"name":"Jira",             "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"technology"},
-{"name":"Gerrit",           "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"technology"},
-{"name":"Jenkins",          "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"technology"},
-{"name":"Git",              "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"technology"},
+{"name":"PlantUML",         "startDate":new Date("2017"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Jira",             "startDate":new Date("2016"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Gerrit",           "startDate":new Date("2016"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Jenkins",          "startDate":new Date("2016"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Git",              "startDate":new Date("2016"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Nginx",            "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Robot Framework",  "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Colander",         "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Cornice",          "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Jupyter",          "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Pandas",           "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Matplotlib",       "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Seaborn",          "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
 
 ] // end entries
 
