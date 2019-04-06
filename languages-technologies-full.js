@@ -60,6 +60,7 @@ var entries = [
 {"name":"Git",              "startDate":new Date("2016"),"endDate":new Date("2020"),"type":"technology"},
 {"name":"Nginx",            "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
 {"name":"Robot Framework",  "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Pyramid",          "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
 {"name":"Colander",         "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
 {"name":"Cornice",          "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
 {"name":"Jupyter",          "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
