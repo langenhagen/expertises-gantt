@@ -1,6 +1,6 @@
 # Gantt Chart for My Languages and technologies.
-author: langenhagen
-version 170611
+- author: langenhagen
+- version 170611
 
 
 Nice Javascript visualisation of the languages and APIs I used and use
