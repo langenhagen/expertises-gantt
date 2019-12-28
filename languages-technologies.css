@@ -1,18 +1,6 @@
 /*
 author: langenhagen
-version: 170611
-*/
-
-/*
-the colors for find/replace fast exchange
-
-site background: #F0F0F0
-chart background: #FFF
-hover bar: #464;
-education: #FF6B6B
-work: #4ECDC4
-language: #C7F464
-technology: #839096
+version: 19-12-28
 */
 
 html,body {
@@ -97,35 +85,35 @@ svg {
 }
 
 .hoverBar {
-    fill: #464;
+    fill: #888;
 }
 
 .bar-education {
-    fill:  #FF6B6B;
-    background: #FF6B6B;
+    fill:  #e00;
+    /*background: #f00;*/
     font-weight: bold;
-    stroke: #000;
+    /*stroke: #000;*/
 }
 
 .bar-work {
-    fill: #4ECDC4;
-    background: #4ECDC4;
+    fill: #00f;
+    /*background: #00f;*/
     font-weight: bold;
-    stroke: #000;
+    /*stroke: #000;*/
 }
 
 .bar-language {
-    fill: #C7F464;
-    background: #C7F464;
+    fill: #808;
+    /*background: #000;*/
     font-weight: bold;
-    stroke: #000;
+    /*stroke: #000;*/
 }
 
 .bar-technology {
-    fill: #839096;
-    background: #839096;
+    fill: #080;
+    /*background: #090;*/
     font-weight: bold;
-    stroke: #000;
+    /*stroke: #000;*/
 }
 
 .axis path,.axis line {
