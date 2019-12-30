@@ -1,10 +1,9 @@
 /*
-author: langenhagen
-version: 18-10-28
+author: andreasl
+version: 19-12-30
 */
 
-
-// Our Gantt entries : (name, start year, end year (not included), type )
+// our Gantt entries : (name, start year, end year (not included), type )
 var entries = [
 {"name":"Technische Universit\u00e4t Berlin", "startDate":new Date("2007"),"endDate":new Date("2016"),"type":"education"},
 
@@ -67,9 +66,7 @@ var entries = [
 {"name":"Pandas",           "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
 {"name":"Matplotlib",       "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
 {"name":"Seaborn",          "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
-
 ] // end entries
-
 
 var entryTypeCssStyles = {
     "work":         "bar-work",
@@ -78,14 +75,13 @@ var entryTypeCssStyles = {
     "technology":   "bar-technology"
 };
 
-
 /* The following lines translate the entries into a format that is anticipated
 and understood by d3.gantt().
 Actually, it would be nice to fix the Gantt Chart library to be a function rather than
 relying on certain variables and stuff, but for now, it works with this simple translation code
 as well */
 
-// Grab the entry names
+// grab the entry names
 var entryNames = [];
 entries.forEach(function(entry) {
     if( !entryNames.includes( entry["name"]) ) {

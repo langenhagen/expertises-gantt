@@ -1,10 +1,11 @@
 /*
 author: langenhagen
-version: 19-12-28
+version: 19-12-30
 */
 
 html,body {
-    background: #F0F0F0;
+    background: #fff;
+    /*background: #f0f0f0; */ /*I like that value, but it misbehaves w/ parent-div & zooming */
     font-family: 'Droid Sans', sans-serif;
     font-size: 20px;
     stroke-width: 1;
@@ -18,10 +19,11 @@ html,body {
 }
 
 #parent-div {
-    //border: 3px solid magenta;
-    background: #FFF;
+    /*border: 3px solid magenta;*/
     margin-top: 40px;
-    padding-bottom: 20px;
+    display:block;
+    background: #fff;
+    padding-bottom: 40px;
     margin-left: 50px;
     margin-right: 50px;
     padding-right: 20px;
@@ -39,36 +41,36 @@ html,body {
 }
 
 #scroll-div {
-    //border: 3px solid red;
+    /*border: 3px solid red;*/
     display: inline-block;
 }
 
 #vertical-scroll-div {
-    //border: 3px solid brown;
-    height: 600px;
+    /*border: 3px solid brown;*/
+    max-height: calc(100% - 400px);
     position: static;
     overflow: hidden;
 }
 
 #legendX-div {
-    //border: 3px solid purple;
+    /*border: 3px solid purple;*/
     height: 50px;
     overflow: hidden;
 }
 
 #legendY-div {
-    //border: 3px solid blue;
+    /*border: 3px solid blue;*/
     float: left;
     display: inline-block;
 }
 
 #gantt-div {
-    //border: 3px solid red;
+    /*border: 3px solid red;*/
     overflow:hidden;
 }
 
 svg {
-    //border: 3px solid green;
+    /*border: 3px solid green;*/
     font-size: 20px;
 }
 
@@ -78,7 +80,7 @@ svg {
 .text-entry {
     opacity: 1;
     font-size: 19px;
-    fill: #FFF;
+    fill: #fff;
 }
 
 .axis text {
@@ -89,31 +91,35 @@ svg {
 }
 
 .bar-education {
+    color: #fff;
     fill:  #e00;
-    /*background: #f00;*/
+    background: #e00;
     font-weight: bold;
-    /*stroke: #000;*/
+    stroke: #000;
 }
 
 .bar-work {
+    color: #fff;
     fill: #00f;
-    /*background: #00f;*/
+    background: #00f;
     font-weight: bold;
-    /*stroke: #000;*/
+    stroke: #000;
 }
 
 .bar-language {
+    color: #fff;
     fill: #808;
-    /*background: #000;*/
+    background: #808;
     font-weight: bold;
-    /*stroke: #000;*/
+    stroke: #000;
 }
 
 .bar-technology {
+    color: #fff;
     fill: #080;
-    /*background: #090;*/
+    background: #080;
     font-weight: bold;
-    /*stroke: #000;*/
+    stroke: #000;
 }
 
 .axis path,.axis line {

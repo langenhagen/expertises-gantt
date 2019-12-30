@@ -170,7 +170,6 @@ d3.gantt = function() {
             .attr("x2", -1000)
             .attr("y2", 4000);
 
-
         // manage the scrolling
         var scrollContainerElement = document.getElementById(scrollContainer);
         scrollContainerElement.style.width = yAxisGroupWidth + width;
@@ -207,13 +206,11 @@ d3.gantt = function() {
             console.log("mouseout");
         }
 
-
         // make the dashed vertical line snap to the nearest year
         // make the horizontal bar snap to nearest entry row
         outerScrollContainerElement.onmousemove = function(event) {
 
             var parentOffset = $(this).parent().offset();
-
             var mouseX = outerScrollContainerElement.scrollLeft + event.pageX - parentOffset.left - yAxisGroupWidth + yearLength/2;
             var hoverLineX = mouseX - mouseX % yearLength;
             hoverLineX = Math.max(0,hoverLineX);
@@ -241,7 +238,6 @@ d3.gantt = function() {
 
         return gantt;
     };
-
 
     /** Gets / sets the tasks.
     */

@@ -1,10 +1,9 @@
 /*
 author: langenhagen
-version: 18-10-28
+version: 19-12-30
 */
 
-
-// Our Gantt entries : (name, start year, end year (not included), type )
+// our Gantt entries : (name, start year, end year (not included), type )
 var entries = [
 {"name":"Technische Universit\u00e4t Berlin", "startDate":new Date("2007"),"endDate":new Date("2016"),"type":"education"},
 
@@ -34,9 +33,7 @@ var entries = [
 {"name":"Cornice",      "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
 {"name":"Jupyter",      "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
 {"name":"Pandas",       "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
-
 ] // end entries
-
 
 var entryTypeCssStyles = {
     "work":         "bar-work",
@@ -44,7 +41,6 @@ var entryTypeCssStyles = {
     "language":     "bar-language",
     "technology":   "bar-technology"
 };
-
 
 /* The following lines translate the entries into a format that is anticipated
 and understood by d3.gantt().
