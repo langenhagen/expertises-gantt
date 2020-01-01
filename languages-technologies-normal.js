@@ -29,8 +29,8 @@ var entries = [
 {"name":"OpenCV",       "startDate":new Date("2012"),"endDate":new Date("2016"),"type":"technology"},
 {"name":"Boost",        "startDate":new Date("2012"),"endDate":new Date("2016"),"type":"technology"},
 {"name":"Nginx",        "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
-{"name":"Colander",     "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
-{"name":"Cornice",      "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Pyramid",      "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
+{"name":"Celery",       "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
 {"name":"Jupyter",      "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
 {"name":"Pandas",       "startDate":new Date("2018"),"endDate":new Date("2020"),"type":"technology"},
 ] // end entries
