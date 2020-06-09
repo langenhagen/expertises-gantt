@@ -15,6 +15,7 @@ var entries = [
 {"name":"Visual Basic", "startDate":new Date("2000"),"endDate":new Date("2007"),"type":"language"},
 {"name":"C++",          "startDate":new Date("2006"),"endDate":new Date("2008"),"type":"language"},
 {"name":"C++",          "startDate":new Date("2011"),"endDate":new Date("2019"),"type":"language"},
+{"name":"C++",          "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
 {"name":"C",            "startDate":new Date("2008"),"endDate":new Date("2010"),"type":"language"},
 {"name":"Java",         "startDate":new Date("2008"),"endDate":new Date("2013"),"type":"language"},
 {"name":"Java",         "startDate":new Date("2017"),"endDate":new Date("2019"),"type":"language"},
