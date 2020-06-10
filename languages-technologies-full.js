@@ -27,6 +27,7 @@ var entries = [
 {"name":"Swift",        "startDate":new Date("2018"),"endDate":new Date("2019"),"type":"language"},
 {"name":"Kotlin",       "startDate":new Date("2018"),"endDate":new Date("2019"),"type":"language"},
 {"name":"CMake",        "startDate":new Date("2018"),"endDate":new Date("2019"),"type":"language"},
+{"name":"CMake",        "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
 {"name":"HLSL",         "startDate":new Date("2014"),"endDate":new Date("2015"),"type":"language"},
 {"name":"GLSL",         "startDate":new Date("2014"),"endDate":new Date("2015"),"type":"language"},
 {"name":"CUDA",         "startDate":new Date("2015"),"endDate":new Date("2016"),"type":"language"},
