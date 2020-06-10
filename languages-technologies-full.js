@@ -70,6 +70,7 @@ var entries = [
 {"name":"Matplotlib",       "startDate":new Date("2018"),"endDate":new Date("2021"),"type":"technology"},
 {"name":"Seaborn",          "startDate":new Date("2018"),"endDate":new Date("2021"),"type":"technology"},
 {"name":"Jekyll",           "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"technology"},
+{"name":"X11",              "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"technology"},
 ] // end entries
 
 var entryTypeCssStyles = {
