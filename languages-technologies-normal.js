@@ -10,6 +10,7 @@ var entries = [
 {"name":"DAI-Labor",    "startDate":new Date("2011"),"endDate":new Date("2014"),"type":"work"},
 {"name":"HERE",         "startDate":new Date("2016"),"endDate":new Date("2018"),"type":"work"},
 {"name":"CeleraOne",    "startDate":new Date("2018"),"endDate":new Date("2021"),"type":"work"},
+{"name":"Momox",        "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"work"},
 
 {"name":"Visual Basic", "startDate":new Date("2000"),"endDate":new Date("2007"),"type":"language"},
 {"name":"C++",          "startDate":new Date("2006"),"endDate":new Date("2008"),"type":"language"},
