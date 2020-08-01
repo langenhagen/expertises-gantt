@@ -8,8 +8,8 @@ var entries = [
 {"name":"Technische Universit\u00e4t Berlin", "startDate":new Date("2007"),"endDate":new Date("2016"),"type":"education"},
 
 {"name":"DAI-Labor",    "startDate":new Date("2011"),"endDate":new Date("2014"),"type":"work"},
-{"name":"HERE",         "startDate":new Date("2016"),"endDate":new Date("2018"),"type":"work"},
-{"name":"CeleraOne",    "startDate":new Date("2018"),"endDate":new Date("2021"),"type":"work"},
+{"name":"HERE",         "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"work"},
+{"name":"CeleraOne",    "startDate":new Date("2019"),"endDate":new Date("2021"),"type":"work"},
 {"name":"Momox",        "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"work"},
 
 {"name":"Basic",        "startDate":new Date("1998"),"endDate":new Date("2001"),"type":"language"},
@@ -22,9 +22,9 @@ var entries = [
 {"name":"Java",         "startDate":new Date("2017"),"endDate":new Date("2019"),"type":"language"},
 {"name":"C#",           "startDate":new Date("2011"),"endDate":new Date("2015"),"type":"language"},
 {"name":"Python",       "startDate":new Date("2015"),"endDate":new Date("2021"),"type":"language"},
-{"name":"Ruby",         "startDate":new Date("2007"),"endDate":new Date("2008"),"type":"language"},
-{"name":"Ruby",         "startDate":new Date("2017"),"endDate":new Date("2018"),"type":"language"},
-{"name":"Objective C",  "startDate":new Date("2017"),"endDate":new Date("2018"),"type":"language"},
+{"name":"Ruby",         "startDate":new Date("2007"),"endDate":new Date("2009"),"type":"language"},
+{"name":"Ruby",         "startDate":new Date("2017"),"endDate":new Date("2019"),"type":"language"},
+{"name":"Objective C",  "startDate":new Date("2017"),"endDate":new Date("2019"),"type":"language"},
 {"name":"Swift",        "startDate":new Date("2018"),"endDate":new Date("2019"),"type":"language"},
 {"name":"Kotlin",       "startDate":new Date("2018"),"endDate":new Date("2019"),"type":"language"},
 {"name":"CMake",        "startDate":new Date("2018"),"endDate":new Date("2019"),"type":"language"},
