@@ -35,6 +35,7 @@ var entries = [
 {"name":"JavaScript",   "startDate":new Date("2014"),"endDate":new Date("2016"),"type":"language"},
 {"name":"HTML",         "startDate":new Date("2014"),"endDate":new Date("2016"),"type":"language"},
 {"name":"PHP",          "startDate":new Date("2014"),"endDate":new Date("2016"),"type":"language"},
+{"name":"PHP",          "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
 {"name":"CSS",          "startDate":new Date("2014"),"endDate":new Date("2016"),"type":"language"},
 {"name":"SQL",          "startDate":new Date("2014"),"endDate":new Date("2015"),"type":"language"},
 {"name":"SQL",          "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"language"},
