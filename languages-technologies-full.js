@@ -79,6 +79,7 @@ var entries = [
 {"name":"RabbitMQ",         "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
 {"name":"Grafana",          "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
 {"name":"Sentry",           "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
+{"name":"sqlalchemy",       "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
 ] // end entries
 
 var entryTypeCssStyles = {
