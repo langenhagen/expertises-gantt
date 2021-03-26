@@ -1,9 +1,9 @@
 /*
-author: langenhagen
-version: 19-12-30
+author: andreasl
+version: 2021-03-26
 */
 
-// our Gantt entries : (name, start year, end year (not included), type )
+// Gantt entries : { name, start year, end year (not included), type }
 var entries = [
 {"name":"Technische Universit\u00e4t Berlin", "startDate":new Date("2007"),"endDate":new Date("2016"),"type":"education"},
 
@@ -49,11 +49,11 @@ var entryTypeCssStyles = {
     "technology":   "bar-technology"
 };
 
-/* The following lines translate the entries into a format that is anticipated
+/*The following lines translate the entries into a format that is anticipated
 and understood by d3.gantt().
 Actually, it would be nice to fix the Gantt Chart library to be a function rather than
 relying on certain variables and stuff, but for now, it works with this simple translation code
-as well */
+as well.*/
 
 // Grab the entry names
 var entryNames = [];
@@ -70,12 +70,13 @@ entries.forEach(function(task) {
 });
 
 var gantt = d3.gantt()
-.parentContainer('#parent-div')
-.ganttContainer('#gantt-div')
-.legendYContainer('#legendY-div')
-.legendXContainer('#legendX-div')
-.outerScrollContainer('scroll-container-div')
-.scrollContainer('scroll-div')
-.taskTypes(entryNames)
-.taskCssClassMapping(entryTypeCssStyles);
+    .parentContainer('#parent-div')
+    .ganttContainer('#gantt-div')
+    .legendYContainer('#legendY-div')
+    .legendXContainer('#legendX-div')
+    .outerScrollContainer('scroll-container-div')
+    .scrollContainer('scroll-div')
+    .taskTypes(entryNames)
+    .taskCssClassMapping(entryTypeCssStyles);
+
 gantt(entries);

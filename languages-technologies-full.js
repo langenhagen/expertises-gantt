@@ -1,9 +1,9 @@
 /*
 author: andreasl
-version: 19-12-30
+version: 2021-03-26
 */
 
-// our Gantt entries : (name, start year, end year (not included), type )
+// Gantt entries : {name, start year, end year (not included), type }
 var entries = [
 {"name":"Technische Universit\u00e4t Berlin", "startDate":new Date("2007"),"endDate":new Date("2016"),"type":"education"},
 
@@ -44,6 +44,7 @@ var entries = [
 {"name":"Matlab",       "startDate":new Date("2012"),"endDate":new Date("2013"),"type":"language"},
 {"name":"AutoIt",       "startDate":new Date("2008"),"endDate":new Date("2011"),"type":"language"},
 {"name":"Lua",          "startDate":new Date("2018"),"endDate":new Date("2021"),"type":"language"},
+{"name":"Go",           "startDate":new Date("2021"),"endDate":new Date("2022"),"type":"language"},
 
 {"name":"Windows Forms",    "startDate":new Date("2000"),"endDate":new Date("2006"),"type":"technology"},
 {"name":"Irrlicht",         "startDate":new Date("2005"),"endDate":new Date("2006"),"type":"technology"},
@@ -75,11 +76,12 @@ var entries = [
 {"name":"Seaborn",          "startDate":new Date("2018"),"endDate":new Date("2021"),"type":"technology"},
 {"name":"Jekyll",           "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"technology"},
 {"name":"X11",              "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"technology"},
-{"name":"OpenShift",        "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
-{"name":"RabbitMQ",         "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
-{"name":"Grafana",          "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
-{"name":"Sentry",           "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
-{"name":"sqlalchemy",       "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
+{"name":"OpenShift",        "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"technology"},
+{"name":"RabbitMQ",         "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"technology"},
+{"name":"Grafana",          "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"technology"},
+{"name":"Sentry",           "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"technology"},
+{"name":"sqlalchemy",       "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"technology"},
+{"name":"Django",           "startDate":new Date("2021"),"endDate":new Date("2022"),"type":"technology"},
 ] // end entries
 
 var entryTypeCssStyles = {
@@ -89,11 +91,11 @@ var entryTypeCssStyles = {
     "technology":   "bar-technology"
 };
 
-/* The following lines translate the entries into a format that is anticipated
+/*The following lines translate the entries into a format that is anticipated
 and understood by d3.gantt().
 Actually, it would be nice to fix the Gantt Chart library to be a function rather than
 relying on certain variables and stuff, but for now, it works with this simple translation code
-as well */
+as well.*/
 
 // grab the entry names
 var entryNames = [];
@@ -110,12 +112,13 @@ entries.forEach(function(task) {
 });
 
 var gantt = d3.gantt()
-.parentContainer('#parent-div')
-.ganttContainer('#gantt-div')
-.legendYContainer('#legendY-div')
-.legendXContainer('#legendX-div')
-.outerScrollContainer('scroll-container-div')
-.scrollContainer('scroll-div')
-.taskTypes(entryNames)
-.taskCssClassMapping(entryTypeCssStyles);
+    .parentContainer('#parent-div')
+    .ganttContainer('#gantt-div')
+    .legendYContainer('#legendY-div')
+    .legendXContainer('#legendX-div')
+    .outerScrollContainer('scroll-container-div')
+    .scrollContainer('scroll-div')
+    .taskTypes(entryNames)
+    .taskCssClassMapping(entryTypeCssStyles);
+
 gantt(entries);
