@@ -9,7 +9,7 @@ var entries = [
 
 {"name":"DAI-Labor",    "startDate":new Date("2011"),"endDate":new Date("2014"),"type":"work"},
 {"name":"HERE",         "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"work"},
-{"name":"CeleraOne",    "startDate":new Date("2019"),"endDate":new Date("2021"),"type":"work"},
+{"name":"CeleraOne",    "startDate":new Date("2018"),"endDate":new Date("2021"),"type":"work"},
 {"name":"Momox",        "startDate":new Date("2020"),"endDate":new Date("2022"),"type":"work"},
 
 {"name":"Basic",        "startDate":new Date("1998"),"endDate":new Date("2001"),"type":"language"},
@@ -29,8 +29,8 @@ var entries = [
 {"name":"Kotlin",       "startDate":new Date("2018"),"endDate":new Date("2019"),"type":"language"},
 {"name":"CMake",        "startDate":new Date("2018"),"endDate":new Date("2019"),"type":"language"},
 {"name":"CMake",        "startDate":new Date("2020"),"endDate":new Date("2021"),"type":"language"},
-{"name":"HLSL",         "startDate":new Date("2014"),"endDate":new Date("2015"),"type":"language"},
-{"name":"GLSL",         "startDate":new Date("2014"),"endDate":new Date("2015"),"type":"language"},
+{"name":"HLSL",         "startDate":new Date("2013"),"endDate":new Date("2015"),"type":"language"},
+{"name":"GLSL",         "startDate":new Date("2013"),"endDate":new Date("2015"),"type":"language"},
 {"name":"CUDA",         "startDate":new Date("2015"),"endDate":new Date("2016"),"type":"language"},
 {"name":"JavaScript",   "startDate":new Date("2014"),"endDate":new Date("2016"),"type":"language"},
 {"name":"HTML",         "startDate":new Date("2014"),"endDate":new Date("2016"),"type":"language"},
