@@ -7,10 +7,11 @@ version: 2021-03-26
 var entries = [
 {"name":"Technische Universit\u00e4t Berlin", "startDate":new Date("2007"),"endDate":new Date("2016"),"type":"education"},
 
-{"name":"DAI-Labor",    "startDate":new Date("2011"),"endDate":new Date("2014"),"type":"work"},
-{"name":"HERE",         "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"work"},
-{"name":"CeleraOne",    "startDate":new Date("2018"),"endDate":new Date("2021"),"type":"work"},
-{"name":"Momox",        "startDate":new Date("2020"),"endDate":new Date("2022"),"type":"work"},
+{"name":"DAI-Labor",        "startDate":new Date("2011"),"endDate":new Date("2014"),"type":"work"},
+{"name":"HERE",             "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"work"},
+{"name":"CeleraOne",        "startDate":new Date("2018"),"endDate":new Date("2021"),"type":"work"},
+{"name":"Momox",            "startDate":new Date("2020"),"endDate":new Date("2022"),"type":"work"},
+{"name":"Tier Mobility",    "startDate":new Date("2021"),"endDate":new Date("2022"),"type":"work"},
 
 {"name":"Visual Basic", "startDate":new Date("2000"),"endDate":new Date("2007"),"type":"language"},
 {"name":"C++",          "startDate":new Date("2006"),"endDate":new Date("2008"),"type":"language"},
