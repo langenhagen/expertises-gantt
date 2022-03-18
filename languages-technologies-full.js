@@ -87,6 +87,7 @@ var entries = [
 {"name":"Pydantic",         "startDate":new Date("2021"),"endDate":new Date("2022"),"type":"technology"},
 {"name":"Gin",              "startDate":new Date("2021"),"endDate":new Date("2022"),"type":"technology"},
 {"name":"Gorm",             "startDate":new Date("2021"),"endDate":new Date("2022"),"type":"technology"},
+{"name":"AWS",              "startDate":new Date("2021"),"endDate":new Date("2022"),"type":"technology"},
 ] // end entries
 
 var entryTypeCssStyles = {

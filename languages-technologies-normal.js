@@ -43,6 +43,7 @@ var entries = [
 {"name":"Jupyter",      "startDate":new Date("2018"),"endDate":new Date("2022"),"type":"technology"},
 {"name":"Pandas",       "startDate":new Date("2018"),"endDate":new Date("2022"),"type":"technology"},
 {"name":"Django",       "startDate":new Date("2021"),"endDate":new Date("2022"),"type":"technology"},
+{"name":"AWS",          "startDate":new Date("2021"),"endDate":new Date("2022"),"type":"technology"},
 ] // end entries
 
 var entryTypeCssStyles = {
