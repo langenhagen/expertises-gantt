@@ -41,7 +41,7 @@ var entries = [
 {"name":"SQL",          "startDate":new Date("2014"),"endDate":new Date("2015"),"type":"language"},
 {"name":"SQL",          "startDate":new Date("2016"),"endDate":new Date("2019"),"type":"language"},
 {"name":"SQL",          "startDate":new Date("2020"),"endDate":new Date("2022"),"type":"language"},
-{"name":"MongoDB",      "startDate":new Date("2018"),"endDate":new Date("2022"),"type":"language"},
+{"name":"MongoDB",      "startDate":new Date("2018"),"endDate":new Date("2021"),"type":"language"},
 {"name":"Matlab",       "startDate":new Date("2012"),"endDate":new Date("2013"),"type":"language"},
 {"name":"AutoIt",       "startDate":new Date("2008"),"endDate":new Date("2011"),"type":"language"},
 {"name":"Lua",          "startDate":new Date("2018"),"endDate":new Date("2021"),"type":"language"},
