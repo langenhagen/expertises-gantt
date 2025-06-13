@@ -97,6 +97,7 @@ var entries = [
 {"name":"ABB",              "startDate":new Date("2024"),"endDate":new Date("2025"),"type":"technology"},
 {"name":"Yaskawa",          "startDate":new Date("2024"),"endDate":new Date("2025"),"type":"technology"},
 {"name":"Antlr",            "startDate":new Date("2024"),"endDate":new Date("2025"),"type":"technology"},
+{"name":"Azure",            "startDate":new Date("2025"),"endDate":new Date("2025"),"type":"technology"},
 ] // end entries
 
 var entryTypeCssStyles = {
